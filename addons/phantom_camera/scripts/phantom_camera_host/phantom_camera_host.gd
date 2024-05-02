@@ -308,7 +308,7 @@ func _get_pcam_host_group() -> Array[Node]:
 	return get_tree().get_nodes_in_group(_constants.PCAM_HOST_GROUP_NAME)
 
 
-func _process(delta):
+func _physics_process(delta):
 	if not is_instance_valid(_active_pcam): return
 
 	if _is_2D:
